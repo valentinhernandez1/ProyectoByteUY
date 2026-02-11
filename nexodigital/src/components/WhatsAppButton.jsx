@@ -1,12 +1,7 @@
-import { CONFIG } from '../config/constants';
+import { openWhatsApp } from '../utils/whatsapp';
 
 const WhatsAppButton = ({ message = '', className = '' }) => {
-  const handleClick = () => {
-    const encodedMessage = encodeURIComponent(
-      message || 'Hola, me interesa conocer más sobre sus servicios de NexoDigital.'
-    );
-    window.open(`https://wa.me/${CONFIG.WHATSAPP_NUMBER}?text=${encodedMessage}`, '_blank');
-  };
+  const handleClick = () => openWhatsApp(message);
 
   return (
     <button

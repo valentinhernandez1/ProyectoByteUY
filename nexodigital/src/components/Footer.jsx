@@ -1,15 +1,30 @@
+import { useState } from 'react';
 import WhatsAppButton from './WhatsAppButton';
 import { CONFIG } from '../config/constants';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+  const [footerLogoError, setFooterLogoError] = useState(false);
 
   return (
     <footer className="bg-gray-900 text-gray-300">
       <div className="container mx-auto px-4 max-w-6xl py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           <div>
-            <h3 className="text-white text-xl font-bold mb-4">NexoDigital</h3>
+            {!footerLogoError ? (
+              <>
+                <img
+                  src={CONFIG.LOGO_FOOTER}
+                  alt=""
+                  className="h-8 w-auto object-contain mb-4"
+                  onError={() => setFooterLogoError(true)}
+                  aria-hidden
+                />
+                <h3 className="sr-only">{CONFIG.COMPANY_NAME}</h3>
+              </>
+            ) : (
+              <h3 className="text-white text-xl font-bold mb-4">{CONFIG.COMPANY_NAME}</h3>
+            )}
             <p className="text-gray-400 leading-relaxed">
               Agencia digital profesional en Uruguay. Soluciones rápidas, confiables y profesionales 
               para pequeñas empresas.
@@ -32,7 +47,7 @@ const Footer = () => {
               </li>
               <li className="pt-2">
                 <WhatsAppButton 
-                  message="Hola, me gustaría contactar con NexoDigital."
+                  message={`Hola, me gustaría contactar con ${CONFIG.COMPANY_NAME}.`}
                   className="text-sm px-4 py-2"
                 />
               </li>
@@ -68,7 +83,7 @@ const Footer = () => {
         
         <div className="border-t border-gray-800 pt-8 text-center text-gray-400 text-sm">
           <p>
-            © {currentYear} NexoDigital. Todos los derechos reservados.
+            © {currentYear} {CONFIG.COMPANY_NAME}. Todos los derechos reservados.
           </p>
           <p className="mt-2">
             Hecho con ❤️ en Uruguay

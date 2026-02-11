@@ -1,4 +1,4 @@
-# 🚀 Guía de Deployment - NexoDigital
+# 🚀 Guía de Deployment - Byte UY
 
 Guía paso a paso para poner tu sitio web en producción.
 
@@ -51,11 +51,11 @@ Antes de hacer el deploy, asegúrate de:
 5. **Deploy:**
    - Click en "Deploy"
    - En 1-2 minutos tu sitio estará online
-   - Obtendrás una URL tipo: `nexodigital.vercel.app`
+   - Obtendrás una URL tipo: `byteuy.vercel.app`
 
 6. **Configurar dominio personalizado:**
    - En el dashboard de Vercel, ve a Settings > Domains
-   - Agrega tu dominio (ej: `nexodigital.uy` o `www.nexodigital.uy`)
+   - Agrega tu dominio (ej: `byteuy.uy` o `www.byteuy.uy`)
    - Sigue las instrucciones para configurar DNS
 
 ---
@@ -82,7 +82,7 @@ Antes de hacer el deploy, asegúrate de:
      - **Publish directory:** `dist`
 
 3. **Deploy y listo:**
-   - Obtendrás una URL tipo: `nexodigital.netlify.app`
+   - Obtendrás una URL tipo: `byteuy.netlify.app`
 
 ---
 
@@ -111,7 +111,7 @@ Antes de hacer el deploy, asegúrate de:
 
    export default defineConfig({
      plugins: [react(), ghPages()],
-     base: '/nexodigital/' // Cambia por el nombre de tu repo
+     base: '/byteuy/' // Cambia por el nombre de tu repo
    })
    ```
 
@@ -164,7 +164,7 @@ Si ya tienes hosting compartido:
 
 1. **Comprar dominio:**
    - En Uruguay: NIC.uy, GoDaddy, Namecheap, etc.
-   - Ejemplo: `nexodigital.uy`
+   - Ejemplo: `byteuy.uy`
 
 2. **Configurar DNS:**
    - Ve al panel de tu proveedor de dominio
@@ -266,7 +266,7 @@ npm run build
 
 ## 💡 Recomendación Final
 
-**Para NexoDigital, recomiendo Vercel porque:**
+**Para Byte UY, recomiendo Vercel porque:**
 1. Es gratis y fácil de usar
 2. Deploy automático desde GitHub
 3. Perfecto para sitios estáticos

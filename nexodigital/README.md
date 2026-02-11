@@ -1,6 +1,6 @@
-# NexoDigital - Sitio Web Corporativo
+# Byte UY - Sitio Web Corporativo
 
-Sitio web profesional para NexoDigital, agencia digital en Uruguay. Enfocado en conversión y generación de leads a través de WhatsApp.
+Sitio web profesional para Byte UY, agencia digital en Uruguay. Enfocado en conversión y generación de leads a través de WhatsApp.
 
 ## 🚀 Tecnologías
 
@@ -120,4 +120,4 @@ Cada sección está en su propio archivo dentro de `src/sections/`. Edita direct
 
 ## 📄 Licencia
 
-Privado - NexoDigital © 2025
+Privado - Byte UY © 2025

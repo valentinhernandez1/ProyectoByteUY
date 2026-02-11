@@ -2,7 +2,7 @@ import WhatsAppButton from '../components/WhatsAppButton';
 
 const SaaSPreview = () => {
   return (
-    <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
+    <section id="plataforma" className="py-20 bg-gradient-to-b from-gray-50 to-white">
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12 border border-gray-200">
           <div className="text-center mb-8">

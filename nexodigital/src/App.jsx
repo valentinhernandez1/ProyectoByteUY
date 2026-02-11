@@ -1,3 +1,4 @@
+import Header from './components/Header';
 import Hero from './sections/Hero';
 import Services from './sections/Services';
 import Differentiation from './sections/Differentiation';
@@ -8,6 +9,7 @@ import Footer from './components/Footer';
 function App() {
   return (
     <div className="min-h-screen">
+      <Header />
       <Hero />
       <Services />
       <Differentiation />
